@@ -1,9 +1,13 @@
 package com.example.tamrinkotlin
 
-data class category(val idCategory: String,val strCategory: String,
-                    val strCategoryThumb: String,val strCategoryDescription: String)
-{
+// مدل داده برای هر دسته‌بندی
+data class Category(
+    val idCategory: String,
+    val strCategory: String,
+    val strCategoryThumb: String,
+    val strCategoryDescription: String
+)
 
-}
 
-data class categoriesresponse(val responce : List<category>)
+// مدل داده برای پاسخ API
+data class CategoriesResponse(val categories: List<Category>)
